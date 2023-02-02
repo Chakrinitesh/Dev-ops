@@ -18,4 +18,4 @@ def ec2_get_vpc_list():
     response = ec2.describe_vpcs()
     return response['Vpcs']
 
-#python program for vpc details 
+#python program for vpc details form boto3
