@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 
 def get_aws_keys():
     load_dotenv()
-    return os.getenv('XXXX'), os.getenv('XXXXXXX')
+    return os.getenv('XXXX'), os.getenv('XXXXXXXXXXXX')
 
 def init_aws_session():
     access_key, secret_key = get_aws_keys()
