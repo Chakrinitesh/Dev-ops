@@ -1,125 +1,100 @@
 [1;32mamazon-ebs: output will be in this color.[0m
 
 [1;32m==> amazon-ebs: Prevalidating any provided VPC information[0m
-[1;32m==> amazon-ebs: Prevalidating AMI Name: DevOpsClass-B18-Build-2023-03-06T09-07-57Z[0m
+[1;32m==> amazon-ebs: Prevalidating AMI Name: DevOpsClass-B18-Build-2023-03-06T14-50-18Z[0m
 [0;32m    amazon-ebs: Found Image ID: ami-05b5badc2f7ddd88d[0m
-[1;32m==> amazon-ebs: Creating temporary keypair: packer_6405ad73-2c1a-5965-a7c3-236c4c540756[0m
-[1;32m==> amazon-ebs: Creating temporary security group for this instance: packer_6405ad79-d2cd-c5fd-37b2-573ed93949e2[0m
+[1;32m==> amazon-ebs: Creating temporary keypair: packer_6405fdac-6d50-e230-8d8b-9f8b24b85ba5[0m
+[1;32m==> amazon-ebs: Creating temporary security group for this instance: packer_6405fdb3-3f54-709f-7a40-d860580c0600[0m
 [1;32m==> amazon-ebs: Authorizing access to port 22 from [0.0.0.0/0] in the temporary security groups...[0m
 [1;32m==> amazon-ebs: Launching a source AWS instance...[0m
-[0;32m    amazon-ebs: Instance ID: i-07ad80452e9e6ff79[0m
-[1;32m==> amazon-ebs: Waiting for instance (i-07ad80452e9e6ff79) to become ready...[0m
-[1;32m==> amazon-ebs: Using SSH communicator to connect: 3.239.188.249[0m
+[0;32m    amazon-ebs: Instance ID: i-06d3e806992622a0e[0m
+[1;32m==> amazon-ebs: Waiting for instance (i-06d3e806992622a0e) to become ready...[0m
+[1;32m==> amazon-ebs: Using SSH communicator to connect: 3.94.21.96[0m
 [1;32m==> amazon-ebs: Waiting for SSH to become available...[0m
 [1;32m==> amazon-ebs: Connected to SSH![0m
-[1;32m==> amazon-ebs: Provisioning with shell script: /tmp/packer-shell2304744530[0m
+[1;32m==> amazon-ebs: Provisioning with shell script: /tmp/packer-shell2238645250[0m
 [0;32m    amazon-ebs: Loaded plugins: extras_suggestions, langpacks, priorities, update-motd[0m
-[1;31m==> amazon-ebs: Existing lock /var/run/yum.pid: another copy is running as pid 3112.[0m
+[1;31m==> amazon-ebs: Existing lock /var/run/yum.pid: another copy is running as pid 3116.[0m
 [1;31m==> amazon-ebs: Another app is currently holding the yum lock; waiting for it to exit...[0m
 [1;31m==> amazon-ebs:   The other application is: yum[0m
-[1;31m==> amazon-ebs:     Memory :  36 M RSS (329 MB VSZ)[0m
-[1;31m==> amazon-ebs:     Started: Mon Mar  6 09:08:51 2023 - 00:25 ago[0m
-[1;31m==> amazon-ebs:     State  : Running, pid: 3112[0m
-[1;31m==> amazon-ebs: Another app is currently holding the yum lock; waiting for it to exit...[0m
-[1;31m==> amazon-ebs:   The other application is: yum[0m
-[1;31m==> amazon-ebs:     Memory :  39 M RSS (332 MB VSZ)[0m
-[1;31m==> amazon-ebs:     Started: Mon Mar  6 09:08:51 2023 - 00:27 ago[0m
-[1;31m==> amazon-ebs:     State  : Running, pid: 3112[0m
-[1;31m==> amazon-ebs: Another app is currently holding the yum lock; waiting for it to exit...[0m
-[1;31m==> amazon-ebs:   The other application is: yum[0m
-[1;31m==> amazon-ebs:     Memory :  40 M RSS (333 MB VSZ)[0m
-[1;31m==> amazon-ebs:     Started: Mon Mar  6 09:08:51 2023 - 00:29 ago[0m
-[1;31m==> amazon-ebs:     State  : Running, pid: 3112[0m
+[1;31m==> amazon-ebs:     Memory :  37 M RSS (330 MB VSZ)[0m
+[1;31m==> amazon-ebs:     Started: Mon Mar  6 14:51:04 2023 - 00:24 ago[0m
+[1;31m==> amazon-ebs:     State  : Running, pid: 3116[0m
 [1;31m==> amazon-ebs: Another app is currently holding the yum lock; waiting for it to exit...[0m
 [1;31m==> amazon-ebs:   The other application is: yum[0m
 [1;31m==> amazon-ebs:     Memory :  42 M RSS (335 MB VSZ)[0m
-[1;31m==> amazon-ebs:     Started: Mon Mar  6 09:08:51 2023 - 00:31 ago[0m
-[1;31m==> amazon-ebs:     State  : Running, pid: 3112[0m
+[1;31m==> amazon-ebs:     Started: Mon Mar  6 14:51:04 2023 - 00:26 ago[0m
+[1;31m==> amazon-ebs:     State  : Running, pid: 3116[0m
+[1;31m==> amazon-ebs: Another app is currently holding the yum lock; waiting for it to exit...[0m
+[1;31m==> amazon-ebs:   The other application is: yum[0m
+[1;31m==> amazon-ebs:     Memory :  41 M RSS (334 MB VSZ)[0m
+[1;31m==> amazon-ebs:     Started: Mon Mar  6 14:51:04 2023 - 00:28 ago[0m
+[1;31m==> amazon-ebs:     State  : Running, pid: 3116[0m
+[1;31m==> amazon-ebs: Another app is currently holding the yum lock; waiting for it to exit...[0m
+[1;31m==> amazon-ebs:   The other application is: yum[0m
+[1;31m==> amazon-ebs:     Memory :  41 M RSS (334 MB VSZ)[0m
+[1;31m==> amazon-ebs:     Started: Mon Mar  6 14:51:04 2023 - 00:30 ago[0m
+[1;31m==> amazon-ebs:     State  : Running, pid: 3116[0m
 [1;31m==> amazon-ebs: Another app is currently holding the yum lock; waiting for it to exit...[0m
 [1;31m==> amazon-ebs:   The other application is: yum[0m
 [1;31m==> amazon-ebs:     Memory :  42 M RSS (335 MB VSZ)[0m
-[1;31m==> amazon-ebs:     Started: Mon Mar  6 09:08:51 2023 - 00:34 ago[0m
-[1;31m==> amazon-ebs:     State  : Running, pid: 3112[0m
+[1;31m==> amazon-ebs:     Started: Mon Mar  6 14:51:04 2023 - 00:32 ago[0m
+[1;31m==> amazon-ebs:     State  : Running, pid: 3116[0m
 [1;31m==> amazon-ebs: Another app is currently holding the yum lock; waiting for it to exit...[0m
 [1;31m==> amazon-ebs:   The other application is: yum[0m
 [1;31m==> amazon-ebs:     Memory :  41 M RSS (334 MB VSZ)[0m
-[1;31m==> amazon-ebs:     Started: Mon Mar  6 09:08:51 2023 - 00:36 ago[0m
-[1;31m==> amazon-ebs:     State  : Running, pid: 3112[0m
+[1;31m==> amazon-ebs:     Started: Mon Mar  6 14:51:04 2023 - 00:34 ago[0m
+[1;31m==> amazon-ebs:     State  : Running, pid: 3116[0m
 [1;31m==> amazon-ebs: Another app is currently holding the yum lock; waiting for it to exit...[0m
 [1;31m==> amazon-ebs:   The other application is: yum[0m
-[1;31m==> amazon-ebs:     Memory :  40 M RSS (333 MB VSZ)[0m
-[1;31m==> amazon-ebs:     Started: Mon Mar  6 09:08:51 2023 - 00:38 ago[0m
-[1;31m==> amazon-ebs:     State  : Running, pid: 3112[0m
+[1;31m==> amazon-ebs:     Memory :  37 M RSS (330 MB VSZ)[0m
+[1;31m==> amazon-ebs:     Started: Mon Mar  6 14:51:04 2023 - 00:36 ago[0m
+[1;31m==> amazon-ebs:     State  : Running, pid: 3116[0m
 [1;31m==> amazon-ebs: Another app is currently holding the yum lock; waiting for it to exit...[0m
 [1;31m==> amazon-ebs:   The other application is: yum[0m
-[1;31m==> amazon-ebs:     Memory :  41 M RSS (334 MB VSZ)[0m
-[1;31m==> amazon-ebs:     Started: Mon Mar  6 09:08:51 2023 - 00:40 ago[0m
-[1;31m==> amazon-ebs:     State  : Running, pid: 3112[0m
+[1;31m==> amazon-ebs:     Memory :  37 M RSS (330 MB VSZ)[0m
+[1;31m==> amazon-ebs:     Started: Mon Mar  6 14:51:04 2023 - 00:38 ago[0m
+[1;31m==> amazon-ebs:     State  : Running, pid: 3116[0m
 [1;31m==> amazon-ebs: Another app is currently holding the yum lock; waiting for it to exit...[0m
 [1;31m==> amazon-ebs:   The other application is: yum[0m
-[1;31m==> amazon-ebs:     Memory :  40 M RSS (333 MB VSZ)[0m
-[1;31m==> amazon-ebs:     Started: Mon Mar  6 09:08:51 2023 - 00:42 ago[0m
-[1;31m==> amazon-ebs:     State  : Running, pid: 3112[0m
+[1;31m==> amazon-ebs:     Memory :  37 M RSS (330 MB VSZ)[0m
+[1;31m==> amazon-ebs:     Started: Mon Mar  6 14:51:04 2023 - 00:40 ago[0m
+[1;31m==> amazon-ebs:     State  : Running, pid: 3116[0m
 [1;31m==> amazon-ebs: Another app is currently holding the yum lock; waiting for it to exit...[0m
 [1;31m==> amazon-ebs:   The other application is: yum[0m
-[1;31m==> amazon-ebs:     Memory :  40 M RSS (333 MB VSZ)[0m
-[1;31m==> amazon-ebs:     Started: Mon Mar  6 09:08:51 2023 - 00:44 ago[0m
-[1;31m==> amazon-ebs:     State  : Running, pid: 3112[0m
+[1;31m==> amazon-ebs:     Memory :  37 M RSS (330 MB VSZ)[0m
+[1;31m==> amazon-ebs:     Started: Mon Mar  6 14:51:04 2023 - 00:42 ago[0m
+[1;31m==> amazon-ebs:     State  : Running, pid: 3116[0m
 [1;31m==> amazon-ebs: Another app is currently holding the yum lock; waiting for it to exit...[0m
 [1;31m==> amazon-ebs:   The other application is: yum[0m
-[1;31m==> amazon-ebs:     Memory :  41 M RSS (334 MB VSZ)[0m
-[1;31m==> amazon-ebs:     Started: Mon Mar  6 09:08:51 2023 - 00:46 ago[0m
-[1;31m==> amazon-ebs:     State  : Running, pid: 3112[0m
+[1;31m==> amazon-ebs:     Memory :  42 M RSS (335 MB VSZ)[0m
+[1;31m==> amazon-ebs:     Started: Mon Mar  6 14:51:04 2023 - 00:44 ago[0m
+[1;31m==> amazon-ebs:     State  : Running, pid: 3116[0m
 [1;31m==> amazon-ebs: Another app is currently holding the yum lock; waiting for it to exit...[0m
 [1;31m==> amazon-ebs:   The other application is: yum[0m
-[1;31m==> amazon-ebs:     Memory :  41 M RSS (334 MB VSZ)[0m
-[1;31m==> amazon-ebs:     Started: Mon Mar  6 09:08:51 2023 - 00:48 ago[0m
-[1;31m==> amazon-ebs:     State  : Running, pid: 3112[0m
+[1;31m==> amazon-ebs:     Memory :  51 M RSS (344 MB VSZ)[0m
+[1;31m==> amazon-ebs:     Started: Mon Mar  6 14:51:04 2023 - 00:46 ago[0m
+[1;31m==> amazon-ebs:     State  : Running, pid: 3116[0m
 [1;31m==> amazon-ebs: Another app is currently holding the yum lock; waiting for it to exit...[0m
 [1;31m==> amazon-ebs:   The other application is: yum[0m
-[1;31m==> amazon-ebs:     Memory :  41 M RSS (334 MB VSZ)[0m
-[1;31m==> amazon-ebs:     Started: Mon Mar  6 09:08:51 2023 - 00:50 ago[0m
-[1;31m==> amazon-ebs:     State  : Running, pid: 3112[0m
+[1;31m==> amazon-ebs:     Memory :  58 M RSS (351 MB VSZ)[0m
+[1;31m==> amazon-ebs:     Started: Mon Mar  6 14:51:04 2023 - 00:48 ago[0m
+[1;31m==> amazon-ebs:     State  : Running, pid: 3116[0m
 [1;31m==> amazon-ebs: Another app is currently holding the yum lock; waiting for it to exit...[0m
 [1;31m==> amazon-ebs:   The other application is: yum[0m
-[1;31m==> amazon-ebs:     Memory :  41 M RSS (334 MB VSZ)[0m
-[1;31m==> amazon-ebs:     Started: Mon Mar  6 09:08:51 2023 - 00:52 ago[0m
-[1;31m==> amazon-ebs:     State  : Running, pid: 3112[0m
+[1;31m==> amazon-ebs:     Memory :  63 M RSS (355 MB VSZ)[0m
+[1;31m==> amazon-ebs:     Started: Mon Mar  6 14:51:04 2023 - 00:50 ago[0m
+[1;31m==> amazon-ebs:     State  : Running, pid: 3116[0m
 [1;31m==> amazon-ebs: Another app is currently holding the yum lock; waiting for it to exit...[0m
 [1;31m==> amazon-ebs:   The other application is: yum[0m
-[1;31m==> amazon-ebs:     Memory :  41 M RSS (334 MB VSZ)[0m
-[1;31m==> amazon-ebs:     Started: Mon Mar  6 09:08:51 2023 - 00:54 ago[0m
-[1;31m==> amazon-ebs:     State  : Running, pid: 3112[0m
+[1;31m==> amazon-ebs:     Memory :  70 M RSS (363 MB VSZ)[0m
+[1;31m==> amazon-ebs:     Started: Mon Mar  6 14:51:04 2023 - 00:52 ago[0m
+[1;31m==> amazon-ebs:     State  : Running, pid: 3116[0m
 [1;31m==> amazon-ebs: Another app is currently holding the yum lock; waiting for it to exit...[0m
 [1;31m==> amazon-ebs:   The other application is: yum[0m
-[1;31m==> amazon-ebs:     Memory :  48 M RSS (341 MB VSZ)[0m
-[1;31m==> amazon-ebs:     Started: Mon Mar  6 09:08:51 2023 - 00:56 ago[0m
-[1;31m==> amazon-ebs:     State  : Running, pid: 3112[0m
-[1;31m==> amazon-ebs: Another app is currently holding the yum lock; waiting for it to exit...[0m
-[1;31m==> amazon-ebs:   The other application is: yum[0m
-[1;31m==> amazon-ebs:     Memory :  54 M RSS (346 MB VSZ)[0m
-[1;31m==> amazon-ebs:     Started: Mon Mar  6 09:08:51 2023 - 00:58 ago[0m
-[1;31m==> amazon-ebs:     State  : Running, pid: 3112[0m
-[1;31m==> amazon-ebs: Another app is currently holding the yum lock; waiting for it to exit...[0m
-[1;31m==> amazon-ebs:   The other application is: yum[0m
-[1;31m==> amazon-ebs:     Memory :  60 M RSS (353 MB VSZ)[0m
-[1;31m==> amazon-ebs:     Started: Mon Mar  6 09:08:51 2023 - 01:00 ago[0m
-[1;31m==> amazon-ebs:     State  : Running, pid: 3112[0m
-[1;31m==> amazon-ebs: Another app is currently holding the yum lock; waiting for it to exit...[0m
-[1;31m==> amazon-ebs:   The other application is: yum[0m
-[1;31m==> amazon-ebs:     Memory :  64 M RSS (356 MB VSZ)[0m
-[1;31m==> amazon-ebs:     Started: Mon Mar  6 09:08:51 2023 - 01:02 ago[0m
-[1;31m==> amazon-ebs:     State  : Running, pid: 3112[0m
-[1;31m==> amazon-ebs: Another app is currently holding the yum lock; waiting for it to exit...[0m
-[1;31m==> amazon-ebs:   The other application is: yum[0m
-[1;31m==> amazon-ebs:     Memory :  77 M RSS (369 MB VSZ)[0m
-[1;31m==> amazon-ebs:     Started: Mon Mar  6 09:08:51 2023 - 01:04 ago[0m
-[1;31m==> amazon-ebs:     State  : Running, pid: 3112[0m
-[1;31m==> amazon-ebs: Another app is currently holding the yum lock; waiting for it to exit...[0m
-[1;31m==> amazon-ebs:   The other application is: yum[0m
-[1;31m==> amazon-ebs:     Memory : 105 M RSS (397 MB VSZ)[0m
-[1;31m==> amazon-ebs:     Started: Mon Mar  6 09:08:51 2023 - 01:06 ago[0m
-[1;31m==> amazon-ebs:     State  : Running, pid: 3112[0m
+[1;31m==> amazon-ebs:     Memory : 102 M RSS (395 MB VSZ)[0m
+[1;31m==> amazon-ebs:     Started: Mon Mar  6 14:51:04 2023 - 00:54 ago[0m
+[1;31m==> amazon-ebs:     State  : Running, pid: 3116[0m
 [0;32m    amazon-ebs: No packages marked for update[0m
 [0;32m    amazon-ebs: Loaded plugins: extras_suggestions, langpacks, priorities, update-motd[0m
 [0;32m    amazon-ebs: Cleaning repos: amzn2-core amzn2extra-docker amzn2extra-nginx1[0m
@@ -171,7 +146,7 @@
 [0;32m    amazon-ebs: Installed size: 6.7 M[0m
 [0;32m    amazon-ebs: Downloading packages:[0m
 [0;32m    amazon-ebs: --------------------------------------------------------------------------------[0m
-[0;32m    amazon-ebs: Total                                              4.7 MB/s | 2.4 MB  00:00[0m
+[0;32m    amazon-ebs: Total                                              810 kB/s | 2.4 MB  00:03[0m
 [0;32m    amazon-ebs: Running transaction check[0m
 [0;32m    amazon-ebs: Running transaction test[0m
 [0;32m    amazon-ebs: Transaction test succeeded[0m
@@ -340,26 +315,24 @@
 [1;32m==> amazon-ebs: Stopping the source instance...[0m
 [0;32m    amazon-ebs: Stopping instance[0m
 [1;32m==> amazon-ebs: Waiting for the instance to stop...[0m
-[1;32m==> amazon-ebs: Creating AMI DevOpsClass-B18-Build-2023-03-06T09-07-57Z from instance i-07ad80452e9e6ff79[0m
-[0;32m    amazon-ebs: AMI: ami-0e9d2145313e450d9[0m
+[1;32m==> amazon-ebs: Creating AMI DevOpsClass-B18-Build-2023-03-06T14-50-18Z from instance i-06d3e806992622a0e[0m
+[0;32m    amazon-ebs: AMI: ami-0de7dc4c7b263669d[0m
 [1;32m==> amazon-ebs: Waiting for AMI to become ready...[0m
 [1;32m==> amazon-ebs: Skipping Enable AMI deprecation...[0m
-[1;32m==> amazon-ebs: Adding tags to AMI (ami-0e9d2145313e450d9)...[0m
-[1;32m==> amazon-ebs: Tagging snapshot: snap-00feb91f5faf867f6[0m
+[1;32m==> amazon-ebs: Adding tags to AMI (ami-0de7dc4c7b263669d)...[0m
+[1;32m==> amazon-ebs: Tagging snapshot: snap-07f1b79901ce6013d[0m
 [1;32m==> amazon-ebs: Creating AMI tags[0m
-[0;32m    amazon-ebs: Adding tag: "Name": "DevOpsClass-B18-Build-2023-03-06T09-07-57Z"[0m
+[0;32m    amazon-ebs: Adding tag: "Name": "DevOpsClass-B18-Build-2023-03-06T14-50-18Z"[0m
 [1;32m==> amazon-ebs: Creating snapshot tags[0m
 [1;32m==> amazon-ebs: Terminating the source AWS instance...[0m
 [1;32m==> amazon-ebs: Cleaning up any extra volumes...[0m
 [1;32m==> amazon-ebs: No volumes to clean up, skipping[0m
 [1;32m==> amazon-ebs: Deleting temporary security group...[0m
 [1;32m==> amazon-ebs: Deleting temporary keypair...[0m
-[1;32mBuild 'amazon-ebs' finished after 6 minutes 23 seconds.[0m
+[1;32mBuild 'amazon-ebs' finished after 5 minutes 58 seconds.[0m
 
-==> Wait completed after 6 minutes 23 seconds
+==> Wait completed after 5 minutes 58 seconds
 
 ==> Builds finished. The artifacts of successful builds are:
 --> amazon-ebs: AMIs were created:
-us-east-1: ami-0e9d2145313e450d9
-
-Finished: SUCCESS
+us-east-1: ami-0de7dc4c7b263669d
