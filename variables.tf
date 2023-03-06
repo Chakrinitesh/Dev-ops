@@ -36,3 +36,9 @@ variable "instance_type" {
     }
 }
 
+variable "imagename" { 
+  
+  default = "${AMID}"
+  description = "The latest AMID."
+
+}
