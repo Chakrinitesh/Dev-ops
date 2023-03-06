@@ -1,0 +1,296 @@
+amazon-ebs: output will be in this color.
+
+==> amazon-ebs: Prevalidating any provided VPC information
+==> amazon-ebs: Prevalidating AMI Name: DevOpsClass-B18-Build-2023-03-06T16-50-36Z
+    amazon-ebs: Found Image ID: ami-05b5badc2f7ddd88d
+==> amazon-ebs: Creating temporary keypair: packer_640619e0-10c8-1db6-31bb-451fea0fe64f
+==> amazon-ebs: Creating temporary security group for this instance: packer_640619e6-d963-179a-1691-adab6ed7c87b
+==> amazon-ebs: Authorizing access to port 22 from [0.0.0.0/0] in the temporary security groups...
+==> amazon-ebs: Launching a source AWS instance...
+    amazon-ebs: Instance ID: i-08ec7b846f3c38793
+m==> amazon-ebs: Waiting for instance (i-08ec7b846f3c38793) to become ready...
+==> amazon-ebs: Using SSH communicator to connect: 44.202.225.182
+==> amazon-ebs: Waiting for SSH to become available...
+==> amazon-ebs: Connected to SSH!
+==> amazon-ebs: Provisioning with shell script: /tmp/packer-shell824351348
+    amazon-ebs: Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
+==> amazon-ebs: Existing lock /var/run/yum.pid: another copy is running as pid 3099.
+==> amazon-ebs: Another app is currently holding the yum lock; waiting for it to exit...
+==> amazon-ebs:   The other application is: yum
+==> amazon-ebs:     Memory :  31 M RSS (324 MB VSZ)
+==> amazon-ebs:     Started: Mon Mar  6 16:51:28 2023 - 00:20 ago
+==> amazon-ebs:     State  : Sleeping, pid: 3099
+==> amazon-ebs: Another app is currently holding the yum lock; waiting for it to exit...
+==> amazon-ebs:   The other application is: yum
+==> amazon-ebs:     Memory :  33 M RSS (324 MB VSZ)
+==> amazon-ebs:     Started: Mon Mar  6 16:51:28 2023 - 00:22 ago
+==> amazon-ebs:     State  : Running, pid: 3099
+==> amazon-ebs: Another app is currently holding the yum lock; waiting for it to exit...
+==> amazon-ebs:   The other application is: yum
+==> amazon-ebs:     Memory :  33 M RSS (324 MB VSZ)
+==> amazon-ebs:     Started: Mon Mar  6 16:51:28 2023 - 00:24 ago
+==> amazon-ebs:     State  : Running, pid: 3099
+==> amazon-ebs: Another app is currently holding the yum lock; waiting for it to exit...
+==> amazon-ebs:   The other application is: yum
+==> amazon-ebs:     Memory :  33 M RSS (324 MB VSZ)
+mazon-ebs:     Started: Mon Mar  6 16:51:28 2023 - 00:27 ago
+==> amazon-ebs:     State  : Running, pid: 3099
+==> amazon-ebs: Another app is currently holding the yum lock; waiting for it to exit...
+==> amazon-ebs:   The other application is: yum
+==> amazon-ebs:     Memory :  33 M RSS (324 MB VSZ)
+==> amazon-ebs:     Started: Mon Mar  6 16:51:28 2023 - 00:29 ago
+==> amazon-ebs:     State  : Running, pid: 3099
+    amazon-ebs: No packages marked for update
+mazon-ebs: Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
+;31m==> amazon-ebs: Existing lock /var/run/yum.pid: another copy is running as pid 3148.
+==> amazon-ebs: Another app is currently holding the yum lock; waiting for it to exit...
+==> amazon-ebs:   The other application is: yumm
+==> amazon-ebs:     Memory :  62 M RSS (279 MB VSZ)
+==> amazon-ebs:     Started: Mon Mar  6 16:51:32 2023 - 01:24 ago
+==> amazon-ebs:     State  : Running, pid: 3148
+==> amazon-ebs: Another app is currently holding the yum lock; waiting for it to exit...
+==> amazon-ebs:   The other application is: yum
+==> amazon-ebs:     Memory :  78 M RSS (295 MB VSZ)
+==> amazon-ebs:     Started: Mon Mar  6 16:51:32 2023 - 01:26 ago
+==> amazon-ebs:     State  : Running, pid: 3148
+==> amazon-ebs: Another app is currently holding the yum lock; waiting for it to exit...
+==> amazon-ebs:   The other application is: yum
+==> amazon-ebs:     Memory : 104 M RSS (321 MB VSZ)
+==> amazon-ebs:     Started: Mon Mar  6 16:51:32 2023 - 01:28 ago
+==> amazon-ebs:     State  : Running, pid: 3148
+    amazon-ebs: Cleaning repos: amzn2-core amzn2extra-docker amzn2extra-nginx1
+    amazon-ebs: 12 metadata files removed
+    amazon-ebs: 4 sqlite files removed
+    amazon-ebs: 0 metadata files removed
+    amazon-ebs: Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
+    amazon-ebs: Resolving Dependencies
+    amazon-ebs: --> Running transaction check
+    amazon-ebs: ---> Package nginx.x86_64 1:1.22.1-1.amzn2.0.2 will be installed
+    amazon-ebs: --> Processing Dependency: nginx-filesystem = 1:1.22.1-1.amzn2.0.2 for package: 1:nginx-1.22.1-1.amzn2.0.2.x86_64
+    amazon-ebs: --> Processing Dependency: nginx-core = 1:1.22.1-1.amzn2.0.2 for package: 1:nginx-1.22.1-1.amzn2.0.2.x86_64
+    amazon-ebs: --> Running transaction check
+    amazon-ebs: ---> Package nginx-core.x86_64 1:1.22.1-1.amzn2.0.2 will be installed
+    amazon-ebs: --> Processing Dependency: libssl.so.1.1(OPENSSL_1_1_1)(64bit) for package: 1:nginx-core-1.22.1-1.amzn2.0.2.x86_64
+    amazon-ebs: --> Processing Dependency: libssl.so.1.1(OPENSSL_1_1_0)(64bit) for package: 1:nginx-core-1.22.1-1.amzn2.0.2.x86_64
+    amazon-ebs: --> Processing Dependency: libcrypto.so.1.1(OPENSSL_1_1_0)(64bit) for package: 1:nginx-core-1.22.1-1.amzn2.0.2.x86_64
+    amazon-ebs: --> Processing Dependency: libssl.so.1.1()(64bit) for package: 1:nginx-core-1.22.1-1.amzn2.0.2.x86_64
+;32m    amazon-ebs: --> Processing Dependency: libprofiler.so.0()(64bit) for package: 1:nginx-core-1.22.1-1.amzn2.0.2.x86_64
+    amazon-ebs: --> Processing Dependency: libcrypto.so.1.1()(64bit) for package: 1:nginx-core-1.22.1-1.amzn2.0.2.x86_64
+    amazon-ebs: ---> Package nginx-filesystem.noarch 1:1.22.1-1.amzn2.0.2 will be installed
+    amazon-ebs: --> Running transaction check
+    amazon-ebs: ---> Package gperftools-libs.x86_64 0:2.6.1-1.amzn2 will be installed
+    amazon-ebs: ---> Package openssl11-libs.x86_64 1:1.1.1g-12.amzn2.0.11 will be installed
+    amazon-ebs: --> Processing Dependency: openssl11-pkcs11 for package: 1:openssl11-libs-1.1.1g-12.amzn2.0.11.x86_64
+    amazon-ebs: --> Running transaction check
+    amazon-ebs: ---> Package openssl11-pkcs11.x86_64 0:0.4.10-6.amzn2.0.1 will be installed
+    amazon-ebs: --> Finished Dependency Resolution
+    amazon-ebs:
+mazon-ebs: Dependencies Resolved
+mazon-ebs:
+    amazon-ebs: ================================================================================
+    amazon-ebs:  Package            Arch     Version                  Repository           Size
+    amazon-ebs: ================================================================================
+mazon-ebs: Installing:
+    amazon-ebs:  nginx              x86_64   1:1.22.1-1.amzn2.0.2     amzn2extra-nginx1    55 k
+m    amazon-ebs: Installing for dependencies:
+    amazon-ebs:  gperftools-libs    x86_64   2.6.1-1.amzn2            amzn2-core          274 k
+    amazon-ebs:  nginx-core         x86_64   1:1.22.1-1.amzn2.0.2     amzn2extra-nginx1   559 k
+    amazon-ebs:  nginx-filesystem   noarch   1:1.22.1-1.amzn2.0.2     amzn2extra-nginx1    25 k
+    amazon-ebs:  openssl11-libs     x86_64   1:1.1.1g-12.amzn2.0.11   amzn2-core          1.4 M
+    amazon-ebs:  openssl11-pkcs11   x86_64   0.4.10-6.amzn2.0.1       amzn2-core           61 k
+    amazon-ebs:
+    amazon-ebs: Transaction Summary
+    amazon-ebs: ================================================================================
+    amazon-ebs: Install  1 Package (+5 Dependent packages)
+    amazon-ebs:
+    amazon-ebs: Total download size: 2.4 M
+    amazon-ebs: Installed size: 6.7 M
+    amazon-ebs: Downloading packages:
+    amazon-ebs: --------------------------------------------------------------------------------
+    amazon-ebs: Total                                              602 kB/s | 2.4 MB  00:04
+    amazon-ebs: Running transaction check
+    amazon-ebs: Running transaction test
+    amazon-ebs: Transaction test succeeded
+    amazon-ebs: Running transaction
+    amazon-ebs:   Installing : openssl11-pkcs11-0.4.10-6.amzn2.0.1.x86_64                   1/6
+    amazon-ebs:   Installing : 1:openssl11-libs-1.1.1g-12.amzn2.0.11.x86_64                 2/6
+;32m    amazon-ebs:   Installing : 1:nginx-filesystem-1.22.1-1.amzn2.0.2.noarch                 3/6mazon-ebs:   Installing : gperftools-libs-2.6.1-1.amzn2.x86_64                         4/6
+    amazon-ebs:   Installing : 1:nginx-core-1.22.1-1.amzn2.0.2.x86_64                       5/6
+    amazon-ebs:   Installing : 1:nginx-1.22.1-1.amzn2.0.2.x86_64                            6/6
+    amazon-ebs:   Verifying  : 1:nginx-1.22.1-1.amzn2.0.2.x86_64                            1/6
+    amazon-ebs:   Verifying  : gperftools-libs-2.6.1-1.amzn2.x86_64                         2/6
+    amazon-ebs:   Verifying  : 1:nginx-filesystem-1.22.1-1.amzn2.0.2.noarch                 3/6
+32m    amazon-ebs:   Verifying  : 1:openssl11-libs-1.1.1g-12.amzn2.0.11.x86_64                 4/6mazon-ebs:   Verifying  : 1:nginx-core-1.22.1-1.amzn2.0.2.x86_64                       5/6
+    amazon-ebs:   Verifying  : openssl11-pkcs11-0.4.10-6.amzn2.0.1.x86_64                   6/6
+    amazon-ebs:
+    amazon-ebs: Installed:
+    amazon-ebs:   nginx.x86_64 1:1.22.1-1.amzn2.0.2
+    amazon-ebs:
+    amazon-ebs: Dependency Installed:
+    amazon-ebs:   gperftools-libs.x86_64 0:2.6.1-1.amzn2
+    amazon-ebs:   nginx-core.x86_64 1:1.22.1-1.amzn2.0.2
+    amazon-ebs:   nginx-filesystem.noarch 1:1.22.1-1.amzn2.0.2
+    amazon-ebs:   openssl11-libs.x86_64 1:1.1.1g-12.amzn2.0.11
+    amazon-ebs:   openssl11-pkcs11.x86_64 0:0.4.10-6.amzn2.0.1
+    amazon-ebs:
+    amazon-ebs: Complete!
+    amazon-ebs: Installing nginx
+    amazon-ebs:   0  ansible2                 available    \
+    amazon-ebs:         [ =2.4.2  =2.4.6  =2.8  =stable ]
+    amazon-ebs:   2  httpd_modules            available    [ =1.0  =stable ]
+    amazon-ebs:   3  memcached1.5             available    \
+    amazon-ebs:         [ =1.5.1  =1.5.16  =1.5.17 ]
+    amazon-ebs:   6  postgresql10             available    [ =10  =stable ]
+    amazon-ebs:   9  R3.4                     available    [ =3.4.3  =stable ]
+    amazon-ebs:  10  rust1                    available    \
+    amazon-ebs:         [ =1.22.1  =1.26.0  =1.26.1  =1.27.2  =1.31.0  =1.38.0
+    amazon-ebs:           =stable ]
+    amazon-ebs:  18  libreoffice              available    \
+    amazon-ebs:         [ =5.0.6.2_15  =5.3.6.1  =stable ]
+    amazon-ebs:  19  gimp                     available    [ =2.8.22 ]
+    amazon-ebs:  20  docker=latest            enabled      \
+    amazon-ebs:         [ =17.12.1  =18.03.1  =18.06.1  =18.09.9  =stable ]
+    amazon-ebs:  21  mate-desktop1.x          available    \
+    amazon-ebs:         [ =1.19.0  =1.20.0  =stable ]m
+    amazon-ebs:  22  GraphicsMagick1.3        available    \
+    amazon-ebs:         [ =1.3.29  =1.3.32  =1.3.34  =stable ]mazon-ebs:  23  tomcat8.5                available    \
+    amazon-ebs:         [ =8.5.31  =8.5.32  =8.5.38  =8.5.40  =8.5.42  =8.5.50
+    amazon-ebs:           =stable ]
+    amazon-ebs:  24  epel                     available    [ =7.11  =stable ]m
+    amazon-ebs:  25  testing                  available    [ =1.0  =stable ]
+    amazon-ebs:  26  ecs                      available    [ =stable ]
+    amazon-ebs:  27  corretto8                available    \
+m    amazon-ebs:         [ =1.8.0_192  =1.8.0_202  =1.8.0_212  =1.8.0_222  =1.8.0_232
+    amazon-ebs:           =1.8.0_242  =stable ]
+mazon-ebs:  29  golang1.11               available    \
+    amazon-ebs:         [ =1.11.3  =1.11.11  =1.11.13  =stable ]
+;32m    amazon-ebs:  30  squid4                   available    [ =4  =stable ]
+    amazon-ebs:  32  lustre2.10               available    \
+    amazon-ebs:         [ =2.10.5  =2.10.8  =stable ]
+    amazon-ebs:  33  java-openjdk11           available    [ =11  =stable ]
+    amazon-ebs:  34  lynis                    available    [ =stable ]
+    amazon-ebs:  36  BCC                      available    [ =0.x  =stable ]
+    amazon-ebs:  37  mono                     available    [ =5.x  =stable ]
+    amazon-ebs:  38  nginx1=latest            enabled      [ =stable ]
+    amazon-ebs:  39  ruby2.6                  available    [ =2.6  =stable ]
+    amazon-ebs:  40  mock                     available    [ =stable ]
+    amazon-ebs:  41  postgresql11             available    [ =11  =stable ]mazon-ebs:  43  livepatch                available    [ =stable ]
+    amazon-ebs:  44  python3.8                available    [ =stable ]
+    amazon-ebs:  45  haproxy2                 available    [ =stable ]
+    amazon-ebs:  46  collectd                 available    [ =stable ]
+    amazon-ebs:  47  aws-nitro-enclaves-cli   available    [ =stable ]
+    amazon-ebs:  48  R4                       available    [ =stable ]
+    amazon-ebs:  49  kernel-5.4               available    [ =stable ]
+    amazon-ebs:  50  selinux-ng               available    [ =stable ]
+    amazon-ebs:  51  php8.0                   available    [ =stable ]
+    amazon-ebs:  52  tomcat9                  available    [ =stable ]
+    amazon-ebs:  53  unbound1.13              available    [ =stable ]
+    amazon-ebs:  54  mariadb10.5              available    [ =stable ]
+    amazon-ebs:  55  kernel-5.10              available    [ =stable ]
+    amazon-ebs:  56  redis6                   available    [ =stable ]m
+    amazon-ebs:  57  ruby3.0                  available    [ =stable ]
+    amazon-ebs:  58  postgresql12             available    [ =stable ]
+    amazon-ebs:  59  postgresql13             available    [ =stable ]
+    amazon-ebs:  60  mock2                    available    [ =stable ]
+    amazon-ebs:  61  dnsmasq2.85              available    [ =stable ]
+    amazon-ebs:  62  kernel-5.15              available    [ =stable ]
+m    amazon-ebs:  63  postgresql14             available    [ =stable ]
+    amazon-ebs:  64  firefox                  available    [ =stable ]
+    amazon-ebs:  65  lustre                   available    [ =stable ]
+    amazon-ebs:  66  php8.1                   available    [ =stable ]
+    amazon-ebs:  67  awscli1                  available    [ =stable ]mazon-ebs:   0  ansible2                 available    \
+    amazon-ebs:         [ =2.4.2  =2.4.6  =2.8  =stable ]
+2m    amazon-ebs:   2  httpd_modules            available    [ =1.0  =stable ]
+    amazon-ebs:   3  memcached1.5             available    \
+    amazon-ebs:         [ =1.5.1  =1.5.16  =1.5.17 ]
+    amazon-ebs:   6  postgresql10             available    [ =10  =stable ]
+    amazon-ebs:   9  R3.4                     available    [ =3.4.3  =stable ]
+32m    amazon-ebs:  10  rust1                    available    \
+    amazon-ebs:         [ =1.22.1  =1.26.0  =1.26.1  =1.27.2  =1.31.0  =1.38.0
+    amazon-ebs:           =stable ]
+    amazon-ebs:  18  libreoffice              available    \
+    amazon-ebs:         [ =5.0.6.2_15  =5.3.6.1  =stable ]
+    amazon-ebs:  19  gimp                     available    [ =2.8.22 ]
+    amazon-ebs:  20  docker=latest            enabled      \
+    amazon-ebs:         [ =17.12.1  =18.03.1  =18.06.1  =18.09.9  =stable ]
+    amazon-ebs:  21  mate-desktop1.x          available    \
+    amazon-ebs:         [ =1.19.0  =1.20.0  =stable ]
+    amazon-ebs:  22  GraphicsMagick1.3        available    \
+    amazon-ebs:         [ =1.3.29  =1.3.32  =1.3.34  =stable ]
+    amazon-ebs:  23  tomcat8.5                available    \
+    amazon-ebs:         [ =8.5.31  =8.5.32  =8.5.38  =8.5.40  =8.5.42  =8.5.50
+    amazon-ebs:           =stable ]
+    amazon-ebs:  24  epel                     available    [ =7.11  =stable ]
+    amazon-ebs:  25  testing                  available    [ =1.0  =stable ]
+    amazon-ebs:  26  ecs                      available    [ =stable ]
+    amazon-ebs:  27  corretto8                available    \
+    amazon-ebs:         [ =1.8.0_192  =1.8.0_202  =1.8.0_212  =1.8.0_222  =1.8.0_232
+    amazon-ebs:           =1.8.0_242  =stable ]
+    amazon-ebs:  29  golang1.11               available    \
+    amazon-ebs:         [ =1.11.3  =1.11.11  =1.11.13  =stable ]
+    amazon-ebs:  30  squid4                   available    [ =4  =stable ]
+    amazon-ebs:  32  lustre2.10               available    \
+    amazon-ebs:         [ =2.10.5  =2.10.8  =stable ]
+    amazon-ebs:  33  java-openjdk11           available    [ =11  =stable ]
+    amazon-ebs:  34  lynis                    available    [ =stable ]
+    amazon-ebs:  36  BCC                      available    [ =0.x  =stable ]
+m    amazon-ebs:  37  mono                     available    [ =5.x  =stable ]
+    amazon-ebs:  38  nginx1=latest            enabled      [ =stable ]
+    amazon-ebs:  39  ruby2.6                  available    [ =2.6  =stable ]m
+    amazon-ebs:  40  mock                     available    [ =stable ]
+    amazon-ebs:  41  postgresql11             available    [ =11  =stable ]
+    amazon-ebs:  43  livepatch                available    [ =stable ]
+    amazon-ebs:  44  python3.8                available    [ =stable ]
+    amazon-ebs:  45  haproxy2                 available    [ =stable ]
+    amazon-ebs:  46  collectd                 available    [ =stable ]
+mazon-ebs:  47  aws-nitro-enclaves-cli   available    [ =stable ]
+    amazon-ebs:  48  R4                       available    [ =stable ]
+    amazon-ebs:  49  kernel-5.4               available    [ =stable ]
+    amazon-ebs:  50  selinux-ng               available    [ =stable ]
+    amazon-ebs:  51  php8.0                   available    [ =stable ]
+    amazon-ebs:  52  tomcat9                  available    [ =stable ]
+    amazon-ebs:  53  unbound1.13              available    [ =stable ]
+    amazon-ebs:  54  mariadb10.5              available    [ =stable ]
+    amazon-ebs:  55  kernel-5.10              available    [ =stable ]
+    amazon-ebs:  56  redis6                   available    [ =stable ]
+    amazon-ebs:  57  ruby3.0                  available    [ =stable ]
+    amazon-ebs:  58  postgresql12             available    [ =stable ]
+    amazon-ebs:  59  postgresql13             available    [ =stable ]
+    amazon-ebs:  60  mock2                    available    [ =stable ]
+;32m    amazon-ebs:  61  dnsmasq2.85              available    [ =stable ]
+    amazon-ebs:  62  kernel-5.15              available    [ =stable ]
+    amazon-ebs:  63  postgresql14             available    [ =stable ]
+    amazon-ebs:  64  firefox                  available    [ =stable ]
+    amazon-ebs:  65  lustre                   available    [ =stable ]
+    amazon-ebs:  66  php8.1                   available    [ =stable ]
+    amazon-ebs:  67  awscli1                  available    [ =stable ]
+    amazon-ebs:
+    amazon-ebs: Now you can install:
+    amazon-ebs:  # yum clean metadata
+    amazon-ebs:  # yum install nginx
+==> amazon-ebs: Stopping the source instance...m
+    amazon-ebs: Stopping instance
+;32m==> amazon-ebs: Waiting for the instance to stop...
+==> amazon-ebs: Creating AMI DevOpsClass-B18-Build-2023-03-06T16-50-36Z from instance i-08ec7b846f3c38793
+    amazon-ebs: AMI: ami-0a536b9bc6cdc484d
+==> amazon-ebs: Waiting for AMI to become ready...
+==> amazon-ebs: Skipping Enable AMI deprecation...
+==> amazon-ebs: Adding tags to AMI (ami-0a536b9bc6cdc484d)...
+==> amazon-ebs: Tagging snapshot: snap-09759997193b31484
+==> amazon-ebs: Creating AMI tags
+    amazon-ebs: Adding tag: "Name": "DevOpsClass-B18-Build-2023-03-06T16-50-36Z"
+==> amazon-ebs: Creating snapshot tags
+==> amazon-ebs: Terminating the source AWS instance...
+mazon-ebs: Cleaning up any extra volumes...
+==> amazon-ebs: No volumes to clean up, skipping
+==> amazon-ebs: Deleting temporary security group...
+==> amazon-ebs: Deleting temporary keypair...
+Build 'amazon-ebs' finished after 8 minutes 1 second.
+
+==> Wait completed after 8 minutes 1 second
+
+==> Builds finished. The artifacts of successful builds are:
+--> amazon-ebs: AMIs were created:
+us-east-1: ami-0a536b9bc6cdc484d
+
+Finished: SUCCESS
