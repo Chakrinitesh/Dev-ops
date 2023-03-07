@@ -1,2 +1,0 @@
-ami-0a536b9bc6cdc484d
-variable imagename { default= }
