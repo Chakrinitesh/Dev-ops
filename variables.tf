@@ -22,7 +22,7 @@ variable "public_subnet1_name" {}
 variable "public_subnet2_name" {}
 variable "public_subnet3_name" {}
 variable "private_subnet_name" {}
-variable Main_Routing_Table {}
+variable "Main_Routing_Table" {}
 variable "azs" {
   description = "Run the EC2 Instances in these Availability Zones"
   default = ["us-east-1a", "us-east-1b", "us-east-1c"]
