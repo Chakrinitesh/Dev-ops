@@ -1,19 +1,16 @@
 #This Terraform Code Deploys Basic VPC Infra.
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 4.0"
+    }
+  }
+}
 provider "aws" {
     access_key = "${var.aws_access_key}"
     secret_key = "${var.aws_secret_key}"
     region = "${var.aws_region}"
-}
-
-
-terraform {
-  required_version = "<= 1.3.14" #Forcing which version of Terraform needs to be used
-  required_providers {
-    aws = {
-      version = "<= 5.0.0" #Forcing which version of plugin needs to be used.
-      source = "hashicorp/aws"
-    }
-  }
 }
 
 resource "aws_vpc" "default" {
