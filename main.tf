@@ -1,4 +1,11 @@
 #This Terraform Code Deploys Basic VPC Infra.
+provider "aws" {
+    access_key = "${var.aws_access_key}"
+    secret_key = "${var.aws_secret_key}"
+    region = "${var.aws_region}"
+}
+
+
 terraform {
   required_version = "<= 1.3.14" #Forcing which version of Terraform needs to be used
   required_providers {
@@ -104,7 +111,7 @@ resource "aws_security_group" "allow_all" {
 
  resource "aws_instance" "web-1" {
      ami = var.imagename
-     #ami = "ami-0d857ff0f5fc4e03b"
+     #ami = "ami-064193ec1086584a9"
      availability_zone = "us-east-1a"
      instance_type = "t2.micro"
      key_name = "mykeypair"
