@@ -7,11 +7,7 @@ terraform {
     }
   }
 }
-provider "aws" {
-    access_key = "${var.aws_access_key}"
-    secret_key = "${var.aws_secret_key}"
-    region = "${var.aws_region}"
-}
+provider "aws" { }
 
 resource "aws_vpc" "default" {
     cidr_block = "${var.vpc_cidr}"
