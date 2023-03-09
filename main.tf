@@ -103,6 +103,11 @@ resource "aws_security_group" "allow_all" {
       most_recent      = true
       name_regex       = "^chakri"
       owners           = ["827950724331"]
+	  
+ filter {
+    name   = "name"
+    values = ["myami-*"]
+  }
 }
 
 
