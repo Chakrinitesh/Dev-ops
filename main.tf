@@ -6,6 +6,7 @@ provider "aws" {
     endpoints {
     sts = "https://sts.us-east-1.amazonaws.com"
 }
+}
 
 terraform {
   required_version = "<= 1.3.14" #Forcing which version of Terraform needs to be used
